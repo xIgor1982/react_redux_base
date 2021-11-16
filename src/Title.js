@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { inputText } from './redux/actions'
 
 function Title(props) {
-    console.log('props title > ', props);
+    // console.log('props title > ', props);
     const text = useSelector(state => {
         // console.log('state >>>>> ', state);
         const { inputReducer } = state;
