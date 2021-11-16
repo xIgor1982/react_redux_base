@@ -1,4 +1,5 @@
 import './App.css';
+import Likes from './Likes';
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
         <div className="card">
           <div className="card-image">
             <img src="./sea.jpg" alt="surfing"/>
+            <Likes />
           </div>
         </div>
       </div>
