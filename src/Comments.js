@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import uniqid from 'uniqid'
-import { commentCreate, commentLoad } from "./redux/actions";
+import { commentCreate, commentsLoad } from "./redux/actions";
 import SingleComment from "./SingleComment";
 
 function Comments(props) {
@@ -27,9 +27,8 @@ function Comments(props) {
         dispatch(commentCreate(textComment, id));
     }
     // console.log('COMMENTS ---> ', comments);
-
     useEffect(() => {
-        dispatch(commentLoad())
+        dispatch(commentsLoad());
     }, []);
 
     return (
